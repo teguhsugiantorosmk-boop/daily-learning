@@ -1,0 +1,93 @@
+Starting Nmap 7.98 ( https://nmap.org ) at 2025-09-27 08:40 -0700
+NSE: Loaded 158 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 08:40
+Completed NSE at 08:40, 0.00s elapsed
+Initiating NSE at 08:40
+Completed NSE at 08:40, 0.00s elapsed
+Initiating NSE at 08:40
+Completed NSE at 08:40, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 08:40
+Completed Parallel DNS resolution of 1 host. at 08:40, 0.01s elapsed
+Initiating Ping Scan at 08:40
+Scanning scanme.nmap.org (45.33.32.156) [4 ports]
+Completed Ping Scan at 08:40, 0.24s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 08:40
+Completed Parallel DNS resolution of 1 host. at 08:40, 0.69s elapsed
+Initiating SYN Stealth Scan at 08:40
+Scanning scanme.nmap.org (45.33.32.156) [1000 ports]
+Discovered open port 80/tcp on 45.33.32.156
+Discovered open port 22/tcp on 45.33.32.156
+Discovered open port 31337/tcp on 45.33.32.156
+Discovered open port 9929/tcp on 45.33.32.156
+Completed SYN Stealth Scan at 08:40, 11.76s elapsed (1000 total ports)
+Initiating Service scan at 08:40
+Scanning 4 services on scanme.nmap.org (45.33.32.156)
+Completed Service scan at 08:40, 6.56s elapsed (4 services on 1 host)
+Initiating OS detection (try #1) against scanme.nmap.org (45.33.32.156)
+Retrying OS detection (try #2) against scanme.nmap.org (45.33.32.156)
+Initiating Traceroute at 08:40
+Completed Traceroute at 08:40, 3.11s elapsed
+Initiating Parallel DNS resolution of 8 hosts. at 08:40
+Completed Parallel DNS resolution of 8 hosts. at 08:40, 3.12s elapsed
+NSE: Script scanning 45.33.32.156.
+Initiating NSE at 08:40
+Completed NSE at 08:41, 7.87s elapsed
+Initiating NSE at 08:41
+Completed NSE at 08:41, 0.98s elapsed
+Initiating NSE at 08:41
+Completed NSE at 08:41, 0.01s elapsed
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.26s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+Not shown: 996 closed tcp ports (reset)
+PORT      STATE SERVICE    VERSION
+22/tcp    open  ssh        OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 ac:00:a0:1a:82:ff:cc:55:99:dc:67:2b:34:97:6b:75 (DSA)
+|   2048 20:3d:2d:44:62:2a:b0:5a:9d:b5:b3:05:14:c2:a6:b2 (RSA)
+|   256 96:02:bb:5e:57:54:1c:4e:45:2f:56:4c:4a:24:b2:57 (ECDSA)
+|_  256 33:fa:91:0f:e0:e1:7b:1f:6d:05:a2:b0:f1:54:41:56 (ED25519)
+80/tcp    open  http       Apache httpd 2.4.7 ((Ubuntu))
+|_http-title: Go ahead and ScanMe!
+|_http-favicon: Nmap Project
+| http-methods: 
+|_  Supported Methods: OPTIONS GET HEAD POST
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+9929/tcp  open  nping-echo Nping echo
+31337/tcp open  tcpwrapped
+Aggressive OS guesses: Linux 5.0 - 5.14 (96%), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3) (96%), Linux 4.15 - 5.19 (94%), HP P2000 G3 NAS device (93%), Linux 2.6.32 - 3.13 (93%), MikroTik RouterOS 6.36 - 6.48 (Linux 3.3.5) (93%), Linux 5.0 (92%), OpenWrt 22.03 (Linux 5.10) (92%), Linux 3.10 - 4.11 (92%), Linux 3.13 - 4.4 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.000 days (since Sat Sep 27 08:40:49 2025)
+Network Distance: 13 hops
+TCP Sequence Prediction: Difficulty=255 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 3389/tcp)
+HOP RTT       ADDRESS
+1   2.00 ms   10.116.168.111
+2   ...
+3   55.00 ms  10.196.103.65
+4   50.00 ms  112.215.250.198
+5   52.00 ms  if-ge-10-3-8-0.tcore1.svq-singapore.as6453.net (180.87.96.197)
+6   ...
+7   209.00 ms if-bundle-53-2.qcore1.tv2-tokyo.as6453.net (209.58.61.96)
+8   ...
+9   242.00 ms if-ae-28-5.tcore2.sv1-santaclara.as6453.net (209.58.86.144)
+10  ...
+11  230.00 ms 10.203.35.72
+12  243.00 ms 10.203.7.43
+13  238.00 ms scanme.nmap.org (45.33.32.156)
+
+NSE: Script Post-scanning.
+Initiating NSE at 08:41
+Completed NSE at 08:41, 0.00s elapsed
+Initiating NSE at 08:41
+Completed NSE at 08:41, 0.00s elapsed
+Initiating NSE at 08:41
+Completed NSE at 08:41, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 43.63 seconds
+           Raw packets sent: 1199 (54.432KB) | Rcvd: 1120 (47.152KB)
