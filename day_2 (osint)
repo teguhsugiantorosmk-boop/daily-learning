@@ -1,0 +1,31 @@
+# OSINT Report – Day 2
+*Date: Sunday, September 28, 2025*  
+*Author: [Teguh Sugiantoro]*  
+
+---
+
+## 🎯 Objective
+The goal of this exercise was to practice **Open Source Intelligence (OSINT)** techniques using two well-known tools:  
+- **SilverInstaEye** → for Instagram profile information gathering  
+- **Sherlock** → for cross-platform username enumeration  
+
+This report documents the methodology, findings, and reflections from the session.
+
+---
+
+## 🛠️ Tools and Setup
+- **Environment:** Windows 10 with Git Bash  
+- **Dependencies:** Python 3.x, Git, Pip  
+- **Tools tested:**
+  - [SilverInstaEye](https://github.com/silverinstaeye/silverinstaeye)  
+  - [Sherlock](https://github.com/sherlock-project/sherlock)  
+
+---
+
+## 📌 Methodology
+
+### 1. SilverInstaEye
+1. Installed dependencies and cloned the repository.  
+2. Executed the following test command on a controlled account:  
+   ```bash
+   python silverinstaeye.py -u test_account -informations -posts
